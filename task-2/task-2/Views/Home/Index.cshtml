@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@Html.ValidationSummary()
+<form action="" method="post">
+<input type="text" name="Name" value="@Model.Name" placeholder="Name" class="form-control" />
+    <span class="text-danger">@Html.ValidationMessage("Name")</span><br />
+
+<input type="text" name="Username" value="@Model.Username" placeholder="Username" class="form-control" />
+    <span class="text-danger">@Html.ValidationMessage("Username")</span><br />
+
+<input type="text" name="Id" value="@Model.Id" placeholder="Id" class="form-control" />
+    <span class="text-danger">@Html.ValidationMessage("Id")</span><br />
+
+<input type="text" name="Email" value="@Model.Email" placeholder="Email" class="form-control" />
+    <span class="text-danger">@Html.ValidationMessage("Email")</span><br />
+
+<input type="submit" value="Sign up" class="btn btn-danger" />
+</form>
